@@ -68,26 +68,7 @@ Predictive modeling with XGBoost proved effective in classifying suspicious tran
 
 Geographic and demographic features play a key role in model accuracy.
 
-🚀 How to Run This Project
-Clone the repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/LuisBuruato/Customer-Transaction-PA.git
-cd Customer-Transaction-PA
-Install dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Open the notebook:
-
-bash
-Copy
-Edit
-jupyter notebook "CT Predictive Analytics.ipynb"
 📬 Contact
 Luis Ramón Buruato
 🔗 GitHub Profile
