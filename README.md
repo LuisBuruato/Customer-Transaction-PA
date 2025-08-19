@@ -1,163 +1,126 @@
-Análisis Predictivo de Transacciones de Clientes
+# Customer Transaction Predictive Analytics
 
-Este repositorio contiene un análisis detallado de las transacciones de clientes, utilizando diversas visualizaciones para entender patrones y comportamientos. Los gráficos presentados a continuación se encuentran en la carpeta graficos.
+This repository contains a comprehensive analysis of customer transactions, including spending behavior, demographic characteristics, hourly patterns, and variable correlations. All charts are located in the `graficos` folder.
 
-Contenido de la Carpeta graficos
+---
 
-A continuación, se presenta una lista de los gráficos disponibles junto con una breve descripción de cada uno:
+## 1️⃣ Demographic Analysis
 
-Customer_Age_Distribution1.PNG
+### Customer Age Distribution
+![Customer Age Distribution](graficos/Customer_Age_Distribution1.PNG)  
+Shows the distribution of customer ages in the dataset.
 
+![Customer Age Distribution](graficos/customer_age_distribution.png)  
+Another version of the age distribution for comparison and validation.
 
-Descripción: Distribución de la edad de los clientes.
+### Gender Distribution
+![Gender Distribution](graficos/gender_distribution.png)  
+Distribution of customers by gender.
 
-accumulative_spending_by_hour_age.png
+---
 
+## 2️⃣ Income and Spending Analysis
 
-Descripción: Gasto acumulativo por hora según la edad del cliente.
+### Annual Salary Distribution
+![Annual Salary Distribution](graficos/annual_salary_distribution.png)  
+Displays the distribution of customers' annual salaries.
 
-amount_distribution_histogram.png
+### Average Monthly Income
+![Average Income per Month](graficos/average_income_per_month.png)  
+Shows the average monthly income of customers.
 
+### Accumulative Spending by Hour and Age
+![Accumulative Spending by Hour and Age](graficos/accumulative_spending_by_hour_age.png)  
+Shows accumulated spending throughout the day, segmented by age group.
 
-Descripción: Histograma de la distribución de los montos de las transacciones.
+### Total Debit by Age
+![Total Debit by Age](graficos/total_debit_by_age.png)  
+Total debit amount by age group.
 
-annual_salary_distribution.png
+### Total Debit by Age and Month
+![Total Debit by Age & Month](graficos/total_debit_by_age_month.png)  
+Total debit amount by age and month.
 
+### Total Debit by Day of Week and Age
+![Total Debit by DoW & Age](graficos/total_debit_by_dow_age.png)  
+Total debit by day of the week and age group.
 
-Descripción: Distribución de los salarios anuales de los clientes.
+### Total Debit by Hour and Age
+![Total Debit by Hour & Age](graficos/total_debit_by_hour_age.png)  
+Total debit amount segmented by hour and age.
 
-average_income_per_month.png
+### Total Relative Transaction Count by Gender
+![Total Relative Transaction Count by Gender](graficos/total_relative_transaction_count_by_gender.png)  
+Percentage distribution of transactions by gender.
 
+---
 
-Descripción: Ingreso promedio mensual de los clientes.
+## 3️⃣ Transaction Analysis
 
-card_present_flag.png
+### Hourly Transaction Count by Day of Week
+![Hourly Transaction Count by DoW](graficos/hourly_transaction_count_by_dow.png)  
+Number of transactions by hour and day of the week.
 
+### Hourly Transaction Count by Day of Week (Relative)
+![Hourly Transaction Count by DoW Relative](graficos/hourly_transaction_count_by_dow_relative.png)  
+Relative distribution of transactions by hour and day of the week.
 
-Descripción: Distribución de las transacciones según la presencia de la tarjeta.
+### Hourly Transaction Count by Month
+![Hourly Transaction Count by Month](graficos/hourly_transaction_count_by_month.png)  
+Number of transactions by hour and month.
 
-customer_age_distribution.png
+### Hourly Transaction Count by Month (Relative)
+![Hourly Transaction Count by Month Relative](graficos/hourly_transaction_count_by_month_relative.png)  
+Relative distribution of transactions by hour and month.
 
+### Debit Transaction Frequency
+![Debit Transaction Frequency](graficos/debit_transaction_frequency.png)  
+Frequency of debit transactions per customer.
 
-Descripción: Distribución de la edad de los clientes.
+### Transaction Type Frequency
+![Transaction Type Frequency](graficos/transaction_type_freq.png)  
+Number of transactions by type (debit, credit, etc.).
 
-debit_transaction_frequency.png
+### Transaction Status Histogram
+![Transaction Status Histogram](graficos/transaction_status_hist.png)  
+Distribution of transactions according to status (approved, declined, pending, etc.).
 
+### Purchase States
+![Purchase States](graficos/purchase_states.png)  
+Displays the purchase states of each transaction.
 
-Descripción: Frecuencia de las transacciones de débito.
+### Transactions by Card Present Flag
+![Txn by Card Present](graficos/txn_by_card_present.png)  
+Distribution of transactions depending on whether the card was present.
 
-feature_correlation_annual_salary.png
+### Transactions by Merchant State
+![Transactions by State](graficos/transactions_by_state.png)  
+Number of transactions per merchant state.
 
+---
 
-Descripción: Correlación entre características y el salario anual.
+## 4️⃣ Variable Analysis and Correlations
 
-feature_importance_total_debit.png
+### Feature Correlation to Annual Salary
+![Feature Correlation Annual Salary](graficos/feature_correlation_annual_salary.png)  
+Shows the correlation of each variable with the annual salary.
 
+### Feature Importance for Total Debit
+![Feature Importance Total Debit](graficos/feature_importance_total_debit.png)  
+Shows which features have the greatest impact on customers' total debit.
 
-Descripción: Importancia de las características en el total de débito.
+### Top Customer Names
+![Top Customer Names](graficos/top_nombres_clientes.png)  
+The most frequent customer names in the dataset.
 
-gender_distribution.png
+---
 
+## Notes
 
-Descripción: Distribución de los clientes por género.
+- All charts are located in the `graficos` folder.
+- Image paths are relative, so they display correctly on GitHub.
+- This README serves as a visual and explanatory guide for the customer transaction analysis.
 
-hourly_transaction_count_by_dow.png
-
-
-Descripción: Conteo de transacciones por hora según el día de la semana.
-
-hourly_transaction_count_by_dow_relative.png
-
-
-Descripción: Conteo relativo de transacciones por hora según el día de la semana.
-
-hourly_transaction_count_by_month.png
-
-
-Descripción: Conteo de transacciones por hora según el mes.
-
-hourly_transaction_count_by_month_relative.png
-
-
-Descripción: Conteo relativo de transacciones por hora según el mes.
-
-movement_hist.png
-
-
-Descripción: Histograma de los movimientos de las transacciones.
-
-purchase_states.png
-
-
-Descripción: Distribución de las transacciones por estado de compra.
-
-top_nombres_clientes.png
-
-
-Descripción: Top de los nombres de clientes más frecuentes.
-
-total_debit_by_age.png
-
-
-Descripción: Total de débito por edad de los clientes.
-
-total_debit_by_age_month.png
-
-
-Descripción: Total de débito por edad y mes.
-
-total_debit_by_dow_age.png
-
-
-Descripción: Total de débito por día de la semana y edad.
-
-total_debit_by_hour_age.png
-
-
-Descripción: Total de débito por hora y edad.
-
-total_relative_transaction_count_by_gender.png
-
-
-Descripción: Conteo relativo de transacciones por género.
-
-transaction_status_hist.png
-
-
-Descripción: Histograma del estado de las transacciones.
-
-transaction_type_freq.png
-
-
-Descripción: Frecuencia de los tipos de transacciones.
-
-transactions_by_state.png
-
-
-Descripción: Distribución de las transacciones por estado.
-
-txn_by_card_present.png
-
-
-Descripción: Transacciones según la presencia de la tarjeta.
-
-Cómo Contribuir
-
-Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
-
-Realiza un fork de este repositorio.
-
-Crea una rama para tu nueva característica (git checkout -b feature-nueva-caracteristica).
-
-Realiza tus cambios y haz commit de ellos (git commit -am 'Añadir nueva característica').
-
-Haz push a la rama (git push origin feature-nueva-caracteristica).
-
-Abre un Pull Request.
-
-Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 
 📬 Contact
