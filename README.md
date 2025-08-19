@@ -1,72 +1,163 @@
-📊 Customer Transaction - Predictive Analytics
-This project focuses on analyzing customer transaction data to uncover patterns, detect suspicious activity, and build predictive models. The notebook walks through data exploration, visualizations, and machine learning classification using libraries such as pandas, plotly, scikit-learn, and xgboost.
+Análisis Predictivo de Transacciones de Clientes
 
-📁 Project Structure
-CT Predictive Analytics.ipynb: Main notebook with all analysis steps.
+Este repositorio contiene un análisis detallado de las transacciones de clientes, utilizando diversas visualizaciones para entender patrones y comportamientos. Los gráficos presentados a continuación se encuentran en la carpeta graficos.
 
-images/: Folder containing exported visualizations.
+Contenido de la Carpeta graficos
 
-README.md: This file.
+A continuación, se presenta una lista de los gráficos disponibles junto con una breve descripción de cada uno:
 
-🧠 Project Goals
-Perform exploratory data analysis (EDA).
+Customer_Age_Distribution1.PNG
 
-Understand customer behavior and transaction patterns.
 
-Identify potential anomalies or fraudulent transactions.
+Descripción: Distribución de la edad de los clientes.
 
-Train and evaluate machine learning classification models.
+accumulative_spending_by_hour_age.png
 
-Visualize and interpret model results.
 
-📌 Exploratory Data Analysis
-Age Distribution by Gender
+Descripción: Gasto acumulativo por hora según la edad del cliente.
 
-This chart shows how the age of customers varies across different gender categories.
+amount_distribution_histogram.png
 
-It helps understand demographic trends in the data.
 
-Feature Correlation Matrix
+Descripción: Histograma de la distribución de los montos de las transacciones.
 
-This heatmap visualizes the correlation between numerical features.
+annual_salary_distribution.png
 
-Strong correlations are observed between variables like amount, city_pop, and geographic coordinates.
 
-It guides feature selection for modeling.
+Descripción: Distribución de los salarios anuales de los clientes.
 
-Feature Importance
+average_income_per_month.png
 
-Using an XGBoost model, we rank features by their contribution to prediction.
 
-Features such as amount, city_pop, and job show strong predictive power.
+Descripción: Ingreso promedio mensual de los clientes.
 
-Confusion Matrix
+card_present_flag.png
 
-The matrix shows the classification results of the predictive model.
 
-Despite class imbalance, the model performs well in identifying true positives and minimizing false negatives.
+Descripción: Distribución de las transacciones según la presencia de la tarjeta.
 
-⚙️ Machine Learning Modeling
-Models used: RandomForestClassifier, XGBClassifier.
+customer_age_distribution.png
 
-Preprocessing includes one-hot encoding, scaling, and train-test split.
 
-Evaluation metrics:
+Descripción: Distribución de la edad de los clientes.
 
-Accuracy
+debit_transaction_frequency.png
 
-F1-score
 
-Recall
+Descripción: Frecuencia de las transacciones de débito.
 
-Confusion matrix
+feature_correlation_annual_salary.png
 
-✅ Key Takeaways
-The data reveals consistent behavioral patterns tied to customer demographics and location.
 
-Predictive modeling with XGBoost proved effective in classifying suspicious transactions.
+Descripción: Correlación entre características y el salario anual.
 
-Geographic and demographic features play a key role in model accuracy.
+feature_importance_total_debit.png
+
+
+Descripción: Importancia de las características en el total de débito.
+
+gender_distribution.png
+
+
+Descripción: Distribución de los clientes por género.
+
+hourly_transaction_count_by_dow.png
+
+
+Descripción: Conteo de transacciones por hora según el día de la semana.
+
+hourly_transaction_count_by_dow_relative.png
+
+
+Descripción: Conteo relativo de transacciones por hora según el día de la semana.
+
+hourly_transaction_count_by_month.png
+
+
+Descripción: Conteo de transacciones por hora según el mes.
+
+hourly_transaction_count_by_month_relative.png
+
+
+Descripción: Conteo relativo de transacciones por hora según el mes.
+
+movement_hist.png
+
+
+Descripción: Histograma de los movimientos de las transacciones.
+
+purchase_states.png
+
+
+Descripción: Distribución de las transacciones por estado de compra.
+
+top_nombres_clientes.png
+
+
+Descripción: Top de los nombres de clientes más frecuentes.
+
+total_debit_by_age.png
+
+
+Descripción: Total de débito por edad de los clientes.
+
+total_debit_by_age_month.png
+
+
+Descripción: Total de débito por edad y mes.
+
+total_debit_by_dow_age.png
+
+
+Descripción: Total de débito por día de la semana y edad.
+
+total_debit_by_hour_age.png
+
+
+Descripción: Total de débito por hora y edad.
+
+total_relative_transaction_count_by_gender.png
+
+
+Descripción: Conteo relativo de transacciones por género.
+
+transaction_status_hist.png
+
+
+Descripción: Histograma del estado de las transacciones.
+
+transaction_type_freq.png
+
+
+Descripción: Frecuencia de los tipos de transacciones.
+
+transactions_by_state.png
+
+
+Descripción: Distribución de las transacciones por estado.
+
+txn_by_card_present.png
+
+
+Descripción: Transacciones según la presencia de la tarjeta.
+
+Cómo Contribuir
+
+Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
+
+Realiza un fork de este repositorio.
+
+Crea una rama para tu nueva característica (git checkout -b feature-nueva-caracteristica).
+
+Realiza tus cambios y haz commit de ellos (git commit -am 'Añadir nueva característica').
+
+Haz push a la rama (git push origin feature-nueva-caracteristica).
+
+Abre un Pull Request.
+
+Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 
 📬 Contact
