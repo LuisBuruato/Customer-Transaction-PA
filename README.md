@@ -10,8 +10,6 @@ This repository contains a comprehensive analysis of customer transactions, incl
 ![Customer Age Distribution](graficos/Customer_Age_Distribution1.PNG)  
 Shows the distribution of customer ages in the dataset.
 
-![Customer Age Distribution](graficos/customer_age_distribution.png)  
-Another version of the age distribution for comparison and validation.
 
 ### Gender Distribution
 ![Gender Distribution](graficos/gender_distribution.png)  
